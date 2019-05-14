@@ -2,6 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9. This project was based off https://devcenter.heroku.com/articles/mean-apps-restful-api#complete-the-project-and-deploy.
 
+Commit messages follows the [standard style](https://www.conventionalcommits.org/en/v1.0.0-beta.4/).
 
 ## Development server
 
