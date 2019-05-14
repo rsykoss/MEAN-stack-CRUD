@@ -13,7 +13,7 @@ import { UserDetailsComponent } from '../user-details/user-details.component';
 export class UserListComponent implements OnInit {
 
   users: User[]
-  selectedContact: User
+  selectedUser: User
 
   constructor(private userService: UserService) { }
 
@@ -39,8 +39,8 @@ export class UserListComponent implements OnInit {
     });
   }
 
-  selectUser(contact: User) {
-    this.selectedContact = contact
+  selectUser(user: User) {
+    this.selectedUser = user
   }
 
   createNewUser() {
@@ -55,7 +55,7 @@ export class UserListComponent implements OnInit {
     this.selectUser(user);
   }
 
-  deleteContact = (userId: String) => {
+  deleteUser = (userId: String) => {
     var idx = this.getIndexOfUser(userId);
     if (idx !== -1) {
       this.users.splice(idx, 1);
@@ -64,7 +64,7 @@ export class UserListComponent implements OnInit {
     return this.users;
   }
 
-  addContact = (user: User) => {
+  addUser = (user: User) => {
     this.users.push(user);
     this.selectUser(user);
     return this.users;
